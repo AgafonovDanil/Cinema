@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fon"
+    tools:context=".SignUp"
+    tools:layout_editor_absoluteX="-4dp"
+    tools:layout_editor_absoluteY="5dp">
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="167dp"
+        android:layout_height="157dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/movie" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView3"
+        app:srcCompat="@drawable/worldcinema" />
+
+    <EditText
+        android:id="@+id/textName"
+        android:layout_width="385dp"
+        android:layout_height="41dp"
+        android:layout_marginTop="36dp"
+        android:hint="Имя"
+        android:textColorHint="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView4" />
+
+    <EditText
+        android:id="@+id/textFamily"
+        android:layout_width="385dp"
+        android:layout_height="41dp"
+        android:layout_marginTop="24dp"
+        android:hint="Фамилия"
+        android:textColorHint="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textName" />
+
+    <EditText
+        android:id="@+id/textMail"
+        android:layout_width="385dp"
+        android:layout_height="41dp"
+        android:layout_marginTop="24dp"
+        android:hint="E-mail"
+        android:textColorHint="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textFamily" />
+
+    <EditText
+        android:id="@+id/textPassword"
+        android:layout_width="385dp"
+        android:layout_height="41dp"
+        android:layout_marginTop="20dp"
+        android:hint="Пароль"
+        android:textColorHint="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textMail" />
+
+    <EditText
+        android:id="@+id/textPasswordTwo"
+        android:layout_width="385dp"
+        android:layout_height="41dp"
+        android:layout_marginTop="24dp"
+        android:hint="Повторите пароль"
+        android:textColorHint="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textPassword" />
+
+    <Button
+        android:id="@+id/btnReg"
+        android:layout_width="385dp"
+        android:layout_height="41dp"
+        android:layout_marginTop="20dp"
+        android:text="Зарегистрироваться"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textPasswordTwo" />
+
+    <Button
+        android:id="@+id/btnBack"
+        android:layout_width="385dp"
+        android:layout_height="41dp"
+        android:layout_marginTop="24dp"
+        android:background="@color/cardview_shadow_end_color"
+        android:onClick="back"
+        android:text="У меня уже есть аккаунт"
+        android:textColor="@android:color/holo_blue_dark"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnReg" />
+</androidx.constraintlayout.widget.ConstraintLayout>
