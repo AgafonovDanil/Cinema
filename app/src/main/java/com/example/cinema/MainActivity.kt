@@ -39,7 +39,7 @@ class MainActivity : AppCompatActivity() {
             } else {
                 val alert = AlertDialog.Builder(this)
                     .setTitle("Ошибка")
-                    .setMessage("Заполните все поля")
+                    .setMessage("Неверный формат Email")
                     .setPositiveButton("OK", null)
                     .create()
                     .show()

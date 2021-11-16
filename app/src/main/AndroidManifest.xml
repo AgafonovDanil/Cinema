@@ -12,9 +12,7 @@
         <activity
             android:name=".MainScreen"
             android:exported="true" />
-        <activity
-            android:name=".ui.MainScreen"
-            android:exported="true" />
+
         <activity
             android:name=".SignUp"
             android:exported="true" />
