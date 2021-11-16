@@ -25,6 +25,7 @@ class MainActivity : AppCompatActivity() {
         return compile(paternt).matcher(email).matches()
     }
 
+
     fun login(view: android.view.View) {
         val intent= Intent (this, SignUp::class.java)
         startActivity(intent)
